@@ -16,7 +16,7 @@ from pyltp import SentenceSplitter
 
 class LTP_MODEL():
     def __init__(self):
-        LTP_DATA_DIR = '/Users/yipu.si/Desktop/知识图谱/ltp_data_v3.4.0'  # ltp模型目录的路径
+        LTP_DATA_DIR = './ltp_data_v3.4.0'  # ltp模型目录的路径
         info('loading models ...')
         self.segmentor = Segmentor()  # 初始化实例
         self.cws_model_path = os.path.join(LTP_DATA_DIR, 'cws.model')  # 分词模型路径，模型名称为`cws.model`
